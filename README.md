@@ -1,23 +1,26 @@
 # MLX90640_Thermal_Camera_with_RaspberryPi
 Getting data from a MLX90640 thermal camera with a raspberry pi
 
-How to setup the device (If installing from scratch)
+<h3>How to setup the device (If installing from scratch)</h3>
 
-How to install the operating system image using raspberry pi imager
-https://www.raspberrypi.com/software/
-Insert the SD card into the computer.
-Choose device, OS (use recommended settings) And select storage
-
+<h3>How to install the operating system image using raspberry pi imager</h3>
+<ul>
+<li>https://www.raspberrypi.com/software/</li>
+<li>Insert the SD card into the computer.</li>
+<li></li>Choose device, OS (use recommended settings) And select storage</li>
+</ul>
 How to login to a raspberry pi,
 Power up the raspberry pi. If prompted for a username and password. See the credentials on the post it note in the box.
 
-How to use the terminal, introduction to linux commands.
+<h3>How to use the terminal, introduction to linux commands.</h3>
 Load the terminal from the bar at the top of the window. Input the following commands:
-cd Desktop/thermal_project 
-sudo python3 thermal_project2.py
-These commands find the script on the device then compile and execute it.
+<ul>
+<li>cd Desktop/thermal_project </li>
+<li>sudo python3 thermal_project2.py</li>
+<li>These commands find the script on the device then compile and execute it.</li>
+</ul>
 
-More on installation...
+<h3>More on installation...</h3>
 
 virtual environments in python
 https://www.w3schools.com/python/python_virtualenv.asp
