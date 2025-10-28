@@ -10,7 +10,7 @@ Getting data from a MLX90640 thermal camera with a raspberry pi
 <li>Choose device, OS (use recommended settings) And select storage</li>
 </ul>
 
-<h3>How to login to a raspberry pi</h3>h3>
+<h3>How to login to a raspberry pi</h3>
 <ul>
 <li>Power up the raspberry pi.</li>
 <li>If prompted for a username and password, enter these in the following screen.</li>
