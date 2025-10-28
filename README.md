@@ -13,7 +13,7 @@ How to login to a raspberry pi,
 Power up the raspberry pi. If prompted for a username and password. See the credentials on the post it note in the box.
 
 <h3>How to use the terminal, introduction to linux commands.</h3>
-Load the terminal from the bar at the top of the window. Input the following commands:
+Load the terminal from the bar at the top of the window.(It is assumed that the script is on the Desktop of the Raspberry pi OS) Input the following commands:
 <ul>
 <li>cd Desktop/thermal_project </li>
 <li>sudo python3 thermal_project2.py</li>
