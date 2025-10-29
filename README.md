@@ -31,11 +31,27 @@ Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
 <li>SCL - Pin5 (GPIO3) </li>
 </ul>
 
-<h3>How to use the terminal, introduction to linux commands.</h3>
+<h3>Open the Terminal </h3>
 We are now going to use the Raspberry Pi's Terminal to type commands that will locate our thermal-camera-Python-script, compile it and execute it: 
 <ul>
 <li> Open the Terminal using the bar at the top-left of the RaspberryPi main desktop window.
+</ul>
+
+<h3>Virtual Environments </h3>
+We will need to create a virtual-environment to isntall packages for our camera. 
+On your Terminal, type the following commands:
+<ul>
 <li> Type the following commands:
+<li> python -m venv virtualEnv
+<li> source virtualEnv/bin/activate
+</ul>
+
+Learn more about how to use virtual environments in Python here:
+https://www.w3schools.com/python/python_virtualenv.asp
+</ul>
+
+<h3>Python Scrips </h3>
+Type the following commands:
 <li> cd Desktop/thermal_camera </li>
 <li> sudo python3 thermal_test_1.py</li>
 
