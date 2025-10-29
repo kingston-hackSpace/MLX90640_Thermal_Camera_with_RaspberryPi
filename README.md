@@ -50,18 +50,14 @@ Learn more about how to use virtual environments in Python here:
 https://www.w3schools.com/python/python_virtualenv.asp
 </ul>
 
-<h3>Python Scrips </h3>
+<h3>Python Scripts </h3>
+<ul>
 Type the following commands:
 <li> cd Desktop/thermal_camera </li>
 <li> sudo python3 thermal_test_1.py</li>
-
 </ul>
 
 <h3>More on installation...</h3>
-
-virtual environments in python
-https://www.w3schools.com/python/python_virtualenv.asp
-
 A step by step guide for installing software and hooking up the mlx90640 to the rpi:
 https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
 
