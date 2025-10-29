@@ -27,7 +27,7 @@ Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
 <li>GND - GND </li>
 <li>3V - Pin1 </li>
 <li>SDA - Pin3 (GPIO2) </li>
-<li>SCL - Pin5 (GPIO5) </li>
+<li>SCL - Pin5 (GPIO3) </li>
 </ul>
 
 <h3>How to use the terminal, introduction to linux commands.</h3>
