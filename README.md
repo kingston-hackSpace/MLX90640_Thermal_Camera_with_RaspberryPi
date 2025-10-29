@@ -32,12 +32,13 @@ Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
 </ul>
 
 <h3>How to use the terminal, introduction to linux commands.</h3>
-Open the terminal using the bar at the top-left of the RaspberryPi desktop window.
-Input the following commands:
+We are now going to use the Raspberry Pi's Terminal to type commands that will locate our thermal-camera-Python-script, compile it and execute it: 
 <ul>
-<li>cd Desktop/thermal_camera </li>
-<li>sudo python3 thermal_test_1.py</li>
-<li>These commands find the script on the device then compile and execute it.</li>
+<li> Open the Terminal using the bar at the top-left of the RaspberryPi main desktop window.
+<li> Input the following commands:
+<li> cd Desktop/thermal_camera </li>
+<li> sudo python3 thermal_test_1.py</li>
+
 </ul>
 
 <h3>More on installation...</h3>
