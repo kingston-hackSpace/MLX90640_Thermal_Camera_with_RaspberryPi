@@ -7,7 +7,7 @@ Getting data from a MLX90640 thermal camera with a raspberry pi
 <ul>
 <li>https://www.raspberrypi.com/software/</li>
 <li>Insert the SD card into the computer.</li>
-<li>Choose device, OS (use recommended settings) And select storage</li>
+<li>Choose device, OS (use recommended settings) and select storage</li>
 </ul>
 
 <h3>How to login to a raspberry pi</h3>
@@ -17,7 +17,8 @@ Getting data from a MLX90640 thermal camera with a raspberry pi
 </ul>
 
 <h3>How to use the terminal, introduction to linux commands.</h3>
-Load the terminal from the bar at the top of the window.(It is assumed that the script is on the Desktop of the Raspberry pi OS) Input the following commands:
+Load the terminal from the bar at the top of the window.
+Input the following commands:
 <ul>
 <li>cd Desktop/thermal_project </li>
 <li>sudo python3 thermal_project2.py</li>
