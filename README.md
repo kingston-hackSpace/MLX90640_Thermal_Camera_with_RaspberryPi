@@ -19,6 +19,7 @@ Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
 <ul>
 <li>From this current GitHub webpage, press on the button "Code" and " Download ZIP"</li>
 <li>Unzip your folder. Save this folder in an easy-to-access location. For this tutorial, keep your folder in Desktop.</li>
+<li>URe-name your folder as: "thermal_camera"</li>  
 </ul>
 
 <h3>Wiring the Thermal Camera</h3>
@@ -31,7 +32,7 @@ Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
 </ul>
 
 <h3>How to use the terminal, introduction to linux commands.</h3>
-Load the terminal from the bar at the top of the window.
+Open the terminal using the bar at the top-left of the RaspberryPi desktop window.
 Input the following commands:
 <ul>
 <li>cd Desktop/thermal_project </li>
