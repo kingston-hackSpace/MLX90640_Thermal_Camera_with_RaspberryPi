@@ -2,8 +2,7 @@
 Getting data from a MLX90640 thermal camera with a raspberry pi
 
 <h3>How to setup the device (If installing from scratch)</h3>
-
-<h3>How to install the operating system image using raspberry pi imager</h3>
+<h3>How to install the operating system image using Raspberry Pi imager</h3>
 <ul>
 <li>https://www.raspberrypi.com/software/</li>
 <li>Insert the SD card into the computer.</li>
