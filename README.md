@@ -40,8 +40,6 @@ We'll use the Raspberry Pi's Terminal to type commands that will locate our ther
 <h3>Virtual Environments </h3>
 We will need to create a virtual-environment to isntall packages for our camera. 
 On your Terminal, type the following commands:
-
-Type the following commands:
 <ul>
 <li> python -m venv virtualEnv
 <li> source virtualEnv/bin/activate
@@ -52,8 +50,9 @@ https://www.w3schools.com/python/python_virtualenv.asp
 </ul>
 
 <h3>Python Scripts </h3>
-<ul>
+
 Type the following commands:
+<ul>
 <li> cd Desktop/thermal_camera </li>
 <li> sudo python3 thermal_test_1.py</li>
 </ul>
