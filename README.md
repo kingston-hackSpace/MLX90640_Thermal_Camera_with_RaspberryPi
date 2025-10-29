@@ -61,8 +61,10 @@ Type the following commands:
 A step by step guide for installing software and hooking up the mlx90640 to the rpi:
 https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
 
+
 Trouble shooting 
 https://raspberrypi.stackexchange.com/questions/113922/cannot-pip-install-adafruit-circuitpython-mlx90640
+
 https://stackoverflow.com/questions/53196848/importerror-no-module-named-board-adafruit
 
 Purchasing device
