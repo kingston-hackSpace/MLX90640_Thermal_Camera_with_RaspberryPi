@@ -68,4 +68,5 @@ https://raspberrypi.stackexchange.com/questions/113922/cannot-pip-install-adafru
 https://stackoverflow.com/questions/53196848/importerror-no-module-named-board-adafruit
 
 <h3> Purchasing: Thermal Camera MLX90640 </h3>
-https://thepihut.com/products/wide-angle-110-mlx90640-thermal-camera-breakout?srsltid=AfmBOorKWaIf_uXfN9zlBELxZb7Ys6t_FNa97cda5I--NhM1RRhj3t2Z
+
+https://shop.pimoroni.com/products/mlx90640-thermal-camera-breakout?variant=12549161746515
