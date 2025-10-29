@@ -16,6 +16,19 @@ Getting data from a MLX90640 thermal camera with a raspberry pi
 <li>If prompted for a username and password, enter these in the following screen.</li>
 </ul>
 
+<h3>How to download Python scripts</h3>
+<ul>
+<li>From this current GitHub webpage, press on the button "Code" and " Download ZIP"</li>
+<li>Unzip your folder. Save this folder in an easy-to-access location. For this tutorial, keep your folder in Desktop.</li>
+
+<h3>Wiring the Thermal Camera</h3>
+<ul>
+<ul>Camera - RasPi
+<li>GND - GND </li>
+<li>3V - Pin1 </li>
+<li>SDA - Pin3 (GPIO2) </li>
+<li>SCL - Pin5 (GPIO5) </li>
+
 <h3>How to use the terminal, introduction to linux commands.</h3>
 Load the terminal from the bar at the top of the window.
 Input the following commands:
