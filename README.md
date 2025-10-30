@@ -1,90 +1,58 @@
-# MLX90640_Thermal_Camera_with_RaspberryPi
-Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
+# MLX90640 Thermal Camera with Raspberry Pi
 
-<h3>How to setup your Raspberry Pi (If installing from scratch)</h3>
+Getting data from a MLX90640 Thermal Camera with a Raspberry Pi using Python.
+
+---
+
+## How to set up your Raspberry Pi (If installing from scratch)
 
 Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** software:
 
-<ul>
-  <li>https://www.raspberrypi.com/software/</li>
-  <li>Insert the SD card into the computer.</li>
-  <li>Choose device, OS (use recommended settings) and select storage</li>
-</ul>
+1. [Download Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+2. Insert the SD card into the computer.
+3. Choose device, OS (use recommended settings) and select storage.
 
-<h3>How to login to a raspberry pi</h3>
-<ul>
-  <li>Power up the raspberry pi.</li>
-  <li>If prompted for a username and password, enter these in the following screen.</li>
-</ul>
+---
 
-<h3>How to download Python scripts</h3>
-<ul>
-  <li>From this current GitHub webpage, press on the button "Code" and " Download ZIP"</li>
-  <li>Unzip your folder. Save this folder in an easy-to-access location. For this tutorial, keep your folder in Desktop.</li>
-  <li>Re-name your folder as: "thermal_camera"</li>  
-</ul>
+## How to log in to a Raspberry Pi
 
-<h3>Wiring the Thermal Camera</h3>
-<ul>
-  <li>Camera - RasPi
-  <li>GND - Pin39 (GPIO GND) </li>
-  <li>3V - Pin1 (GPIO 3V3)</li>
-  <li>SDA - Pin3 (GPIO2) </li>
-  <li>SCL - Pin5 (GPIO3) </li>
-</ul>
+1. Power up the Raspberry Pi.
+2. If prompted for a username and password, enter them in the login screen.
 
-<h3>Open the Terminal </h3>
-We'll use the Raspberry Pi's Terminal to type commands that will locate our thermal-camera-Python-script, compile it and execute it: 
+---
 
-<ul>
-  <li> Open the Terminal using the bar at the top-left of the RaspberryPi main desktop window.
-</ul>
+## How to download Python scripts
 
-<h3>Virtual Environments </h3>
-We will need to create a virtual-environment to isntall packages for our camera. 
-On your Terminal, type the following commands:
-<ul>
-  ```python -m venv virtualEnv
-  ```source virtualEnv/bin/activate
-  
-</ul>
+1. From this GitHub page, press the **Code** button and **Download ZIP**.
+2. Unzip the folder and save it in an easy-to-access location (for example, Desktop).
+3. Rename the folder to `thermal_camera`.
 
-Learn more about how to use virtual environments in Python here:
-https://www.w3schools.com/python/python_virtualenv.asp
-</ul>
+---
 
-<h3>Installing dependancies</h3>
+## Wiring the Thermal Camera
 
-Type the following commands in your Terminal:
-<ul>
-  <li> sudo apt-get update </li>
-  <li> sudo apt-get upgrade (types Y if necessaty) </li>
-  <li> pip3 install matplotlib </li>
-  <li> pip3 install scipy </li>
-  <li> pip3 install numpy </li>
-  <li> sudo apt-get install -y python3-smbus</li>
-  <li> sudo apt-get install -y i2c-tools</li>
-  <li> sudo nano /boot/firmware/config.txt</li>
-</ul>
+| Camera Pin | Raspberry Pi Pin |
+|------------|----------------|
+| GND        | Pin 39 (GPIO GND) |
+| 3V         | Pin 1 (GPIO 3V3) |
+| SDA        | Pin 3 (GPIO2) |
+| SCL        | Pin 5 (GPIO3) |
 
-<h3>Python Scripts </h3>
+---
 
-Type the following commands in your Terminal:
-<ul>
-<li> cd Desktop/thermal_camera </li>
-<li> sudo python3 thermal_test_1.py</li>
-</ul>
+## Open the Terminal
 
-<h3>More on installation...</h3>
-A step by step guide for installing software and hooking up the mlx90640 to the rpi:
-https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
+We'll use the Raspberry Pi Terminal to navigate to our scripts, install dependencies, and run Python scripts.
 
-<h3>Trouble shooting </h3>
+- Open the Terminal using the bar at the top-left of the Raspberry Pi desktop.
 
-https://raspberrypi.stackexchange.com/questions/113922/cannot-pip-install-adafruit-circuitpython-mlx90640
+---
 
-https://stackoverflow.com/questions/53196848/importerror-no-module-named-board-adafruit
+## Virtual Environments
 
-<h3> Purchasing: Thermal Camera MLX90640 </h3>
+We need to create a virtual environment to install Python packages for our camera.  
+In your Terminal, type:
 
-https://shop.pimoroni.com/products/mlx90640-thermal-camera-breakout?variant=12549161746515
+```bash
+python3 -m venv virtualEnv
+source virtualEnv/bin/activate
