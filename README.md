@@ -2,7 +2,7 @@
 Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
 
 <h3>How to setup your Raspberry Pi (If installing from scratch)</h3>
-Install the Raspberry Pi's operating system using the "Raspberry Pi Imager" software available on the official Raspberry Pi website. You can download the software using the following link:
+Install the Raspberry Pi's operating system using the "**Raspberry Pi Imager**" software:
 <ul>
 <li>https://www.raspberrypi.com/software/</li>
 <li>Insert the SD card into the computer.</li>
