@@ -51,9 +51,18 @@ Learn more about how to use virtual environments in Python here:
 https://www.w3schools.com/python/python_virtualenv.asp
 </ul>
 
+<h3>Installing dependancies</h3>
+
+Type the following commands in your Terminal:
+<ul>
+<li> sudo apt-get update </li>
+<li> sudo apt-get upgrade (types Y if necessaty) </li>
+<li> sudo pip3 install matplotlib </li>
+</ul>
+
 <h3>Python Scripts </h3>
 
-Type the following commands:
+Type the following commands in your Terminal:
 <ul>
 <li> cd Desktop/thermal_camera </li>
 <li> sudo python3 thermal_test_1.py</li>
