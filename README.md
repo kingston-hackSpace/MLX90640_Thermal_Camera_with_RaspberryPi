@@ -35,6 +35,7 @@ Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** so
 
 <h3>Open the Terminal </h3>
 We'll use the Raspberry Pi's Terminal to type commands that will locate our thermal-camera-Python-script, compile it and execute it: 
+
 <ul>
   <li> Open the Terminal using the bar at the top-left of the RaspberryPi main desktop window.
 </ul>
@@ -43,8 +44,10 @@ We'll use the Raspberry Pi's Terminal to type commands that will locate our ther
 We will need to create a virtual-environment to isntall packages for our camera. 
 On your Terminal, type the following commands:
 <ul>
+  ```
   <li> python -m venv virtualEnv
   <li> source virtualEnv/bin/activate
+    ```
 </ul>
 
 Learn more about how to use virtual environments in Python here:
@@ -60,6 +63,9 @@ Type the following commands in your Terminal:
   <li> pip3 install matplotlib </li>
   <li> pip3 install scipy </li>
   <li> pip3 install numpy </li>
+  <li> sudo apt-get install -y python3-smbus</li>
+  <li> sudo apt-get install -y i2c-tools</li>
+  <li> sudo nano /boot/firmware/config.txt</li>
 </ul>
 
 <h3>Python Scripts </h3>
