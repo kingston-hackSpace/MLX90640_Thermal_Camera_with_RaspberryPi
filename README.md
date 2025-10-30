@@ -56,5 +56,6 @@ In your Terminal, type:
 ```bash
 python3 -m venv virtualEnv
 
+Activate the virtual environment:
 ```bash
 source virtualEnv/bin/activate
