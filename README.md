@@ -14,9 +14,9 @@ Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** so
    
     * **Device** – Select your Raspberry Pi model.
 
-    **Operating System** – Choose the 64-bit version (use the recommended settings).
+    * **Operating System** – Choose the 64-bit version (use the recommended settings).
 
-    **Storage** – Select your SD card.
+    * **Storage** – Select your SD card.
 
 ---
 
