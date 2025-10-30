@@ -6,45 +6,45 @@ Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
 Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** software:
 
 <ul>
-<li>https://www.raspberrypi.com/software/</li>
-<li>Insert the SD card into the computer.</li>
-<li>Choose device, OS (use recommended settings) and select storage</li>
+  <li>https://www.raspberrypi.com/software/</li>
+  <li>Insert the SD card into the computer.</li>
+  <li>Choose device, OS (use recommended settings) and select storage</li>
 </ul>
 
 <h3>How to login to a raspberry pi</h3>
 <ul>
-<li>Power up the raspberry pi.</li>
-<li>If prompted for a username and password, enter these in the following screen.</li>
+  <li>Power up the raspberry pi.</li>
+  <li>If prompted for a username and password, enter these in the following screen.</li>
 </ul>
 
 <h3>How to download Python scripts</h3>
 <ul>
-<li>From this current GitHub webpage, press on the button "Code" and " Download ZIP"</li>
-<li>Unzip your folder. Save this folder in an easy-to-access location. For this tutorial, keep your folder in Desktop.</li>
-<li>Re-name your folder as: "thermal_camera"</li>  
+  <li>From this current GitHub webpage, press on the button "Code" and " Download ZIP"</li>
+  <li>Unzip your folder. Save this folder in an easy-to-access location. For this tutorial, keep your folder in Desktop.</li>
+  <li>Re-name your folder as: "thermal_camera"</li>  
 </ul>
 
 <h3>Wiring the Thermal Camera</h3>
 <ul>
-<li>Camera - RasPi
-<li>GND - Pin39 (GPIO GND) </li>
-<li>3V - Pin1 (GPIO 3V3)</li>
-<li>SDA - Pin3 (GPIO2) </li>
-<li>SCL - Pin5 (GPIO3) </li>
+  <li>Camera - RasPi
+  <li>GND - Pin39 (GPIO GND) </li>
+  <li>3V - Pin1 (GPIO 3V3)</li>
+  <li>SDA - Pin3 (GPIO2) </li>
+  <li>SCL - Pin5 (GPIO3) </li>
 </ul>
 
 <h3>Open the Terminal </h3>
 We'll use the Raspberry Pi's Terminal to type commands that will locate our thermal-camera-Python-script, compile it and execute it: 
 <ul>
-<li> Open the Terminal using the bar at the top-left of the RaspberryPi main desktop window.
+  <li> Open the Terminal using the bar at the top-left of the RaspberryPi main desktop window.
 </ul>
 
 <h3>Virtual Environments </h3>
 We will need to create a virtual-environment to isntall packages for our camera. 
 On your Terminal, type the following commands:
 <ul>
-<li> python -m venv virtualEnv
-<li> source virtualEnv/bin/activate
+  <li> python -m venv virtualEnv
+  <li> source virtualEnv/bin/activate
 </ul>
 
 Learn more about how to use virtual environments in Python here:
@@ -55,9 +55,11 @@ https://www.w3schools.com/python/python_virtualenv.asp
 
 Type the following commands in your Terminal:
 <ul>
-<li> sudo apt-get update </li>
-<li> sudo apt-get upgrade (types Y if necessaty) </li>
-<li> sudo pip3 install matplotlib </li>
+  <li> sudo apt-get update </li>
+  <li> sudo apt-get upgrade (types Y if necessaty) </li>
+  <li> pip3 install matplotlib </li>
+  <li> pip3 install scipy </li>
+  <li> pip3 install numpy </li>
 </ul>
 
 <h3>Python Scripts </h3>
