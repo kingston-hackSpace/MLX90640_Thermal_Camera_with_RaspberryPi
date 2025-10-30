@@ -140,9 +140,9 @@ Close the Script
 
 TEST1: Reads temperature-data from an MLX90640 thermal camera and prints the average temperature.
 
-TEST2: Visualizes thermal images (on monitor via HDMI) using matplotlib and numpy. Uses the ‘imshow‘ function to plot temp-data into colour-data. 
+TEST2: Real-Time visualizatino of thermal images (on monitor via HDMI) using matplotlib and numpy.
 
-TEST3: 
+TEST3: Save 'frame-shots" images (jpeg) every 100 cycles. 
 
 ## Raspberry Pi OverHeating Hazards
 This project demands operating the Raspberry Pi's I2C bus at high speeds, necessary real-time thermal imaging with the MLX90640 sensor. This can lead to increased power consumption and heat generation. It’s crucial to ensure adequate cooling for the Raspberry Pi to prevent thermal throttling or damage. Proper ventilation or active cooling solutions, such as heatsinks or fans, are recommended to maintain stable operation and prevent overheating.
