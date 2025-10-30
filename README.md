@@ -40,6 +40,7 @@ This tutorial is based on the guide from **how2electronics.com**
 If you have any enquiries regarding the steps that follow, please visit:
 https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
 
+---
 ## MLX90640 Library Documentation
 
 Library Documentation : 
