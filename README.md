@@ -42,8 +42,11 @@ https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-p
 
 ## MLX90640 Library Documentation
 
-Library Documentation : https://github.com/kingston-hackSpace/mlx90640-library 
-Forked in Oct-2025 from https://github.com/melexis/mlx90640-library/tree/master 
+Library Documentation : 
+https://github.com/kingston-hackSpace/mlx90640-library 
+
+Forked in Oct-2025 from :  
+https://github.com/melexis/mlx90640-library/tree/master 
 
 ---
 
