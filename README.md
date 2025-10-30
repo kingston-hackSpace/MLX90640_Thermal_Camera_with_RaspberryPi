@@ -64,7 +64,8 @@ https://www.w3schools.com/python/python_virtualenv.asp
 
 Type the following commands in your Terminal:
 
-```sudo apt-get update
+```
+sudo apt-get update
 sudo apt-get upgrade   # type Y if necessary
 pip3 install matplotlib
 pip3 install scipy
