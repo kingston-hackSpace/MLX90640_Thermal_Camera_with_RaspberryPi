@@ -28,6 +28,13 @@ Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** so
 3. Rename the folder to `thermal_camera`.
 
 ---
+## Thermal Camera MLX90640 TUTORIAL
+This tutorial is based on the guide from **how2electronics.com**
+
+If you have any enquiries regarding the steps that follow, please visit:
+https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
+
+---
 
 ## Wiring the Thermal Camera
 
