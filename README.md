@@ -40,6 +40,11 @@ This tutorial is based on the guide from **how2electronics.com**
 If you have any enquiries regarding the steps that follow, please visit:
 https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
 
+## MLX90640 Library Documentation
+
+Library Documentation : https://github.com/kingston-hackSpace/mlx90640-library 
+Forked in Oct-2025 from https://github.com/melexis/mlx90640-library/tree/master 
+
 ---
 
 ## Wiring the Thermal Camera
@@ -135,12 +140,14 @@ TEST2: Visualizes thermal images (on monitor via HDMI) using matplotlib and nump
 
 TEST3: 
 
-## Troubleshooting
+## Raspberry Pi OverHeating Hazards
+This project demands operating the Raspberry Pi's I2C bus at high speeds, necessary real-time thermal imaging with the MLX90640 sensor. This can lead to increased power consumption and heat generation. It’s crucial to ensure adequate cooling for the Raspberry Pi to prevent thermal throttling or damage. Proper ventilation or active cooling solutions, such as heatsinks or fans, are recommended to maintain stable operation and prevent overheating.
 
-Cannot pip install Adafruit CircuitPython MLX90640
-
-ImportError: No module named 'board'
-
-## Purchasing: Thermal Camera MLX90640
-
+## Purchasing: 
+Thermal Camera MLX90640
 https://shop.pimoroni.com/products/mlx90640-thermal-camera-breakout?variant=12549161746515
+
+Raspberry Pi - Model 5
+https://shop.pimoroni.com/products/raspberry-pi-5?variant=41044580171859
+
+
