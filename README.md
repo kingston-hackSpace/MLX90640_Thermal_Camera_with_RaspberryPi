@@ -80,9 +80,19 @@ Edit the file that is now open by uncommenting the line "Add dtparam=i2c_arm=on"
   
 This enables the I2C interface and set the baud rate for faster data transfer.
 
-After editing config.txt, make sure to reboot your Raspberry Pi:
+To save and close, typle
+**Save** -> Ctrl + O
+Enter
+**Close** -> Ctrl + X
+
+You would be back at your main Terminal window. 
+Now reboot your Raspberry Pi:
 
 ` sudo reboot `
+
+Once the Raspberry Pi restarts, run the following command to scan and display devices connected on the I2C bus 1, helpful for verifying connectivity.
+
+`sudo i2cdetect -y 1`
 
 ## Running Python Scripts
 ```
