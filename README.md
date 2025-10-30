@@ -71,4 +71,5 @@ pip3 install scipy
 pip3 install numpy
 sudo apt-get install -y python3-smbus
 sudo apt-get install -y i2c-tools
-sudo nano /boot/firmware/config.txt```
+sudo nano /boot/firmware/config.txt
+```
