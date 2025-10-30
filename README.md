@@ -93,9 +93,12 @@ Edit the file that is now open by uncommenting the line "Add dtparam=i2c_arm=on"
   
 This enables the I2C interface and set the baud rate for faster data transfer.
 
-To save and close, typle
+To save and close, type
+
 **Save** -> Ctrl + O
+
 Enter
+
 **Close** -> Ctrl + X
 
 You would be back at your main Terminal window. 
