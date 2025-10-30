@@ -94,6 +94,15 @@ Once the Raspberry Pi restarts, run the following command to scan and display de
 
 `sudo i2cdetect -y 1`
 
+Re-open your virtual environtment and install more dependancies:
+
+```
+python3 -m venv virtualEnv
+source virtualEnv/bin/activate
+pip3 install RPI.GPIO adafruit-blinka
+pip3 install adafruit-circuitpython-mlx90640
+```
+
 ## Running Python Scripts
 ```
 cd Desktop/thermal_camera
