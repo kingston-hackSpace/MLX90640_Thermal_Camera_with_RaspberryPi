@@ -66,7 +66,7 @@ Type the following commands in your Terminal:
 
 ```
 sudo apt-get update
-sudo apt-get upgrade   # type Y if necessary
+sudo apt-get upgrade   
 pip3 install matplotlib
 pip3 install scipy
 pip3 install numpy
@@ -74,3 +74,26 @@ sudo apt-get install -y python3-smbus
 sudo apt-get install -y i2c-tools
 sudo nano /boot/firmware/config.txt
 ```
+After editing config.txt, make sure to reboot your Raspberry Pi:
+
+` sudo reboot `
+
+## Running Python Scripts
+```
+cd Desktop/thermal_camera
+sudo python3 thermal_test_1.py
+```
+## More on Installation
+
+Step-by-step guide for installing software and hooking up the MLX90640:
+https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
+
+## Troubleshooting
+
+Cannot pip install Adafruit CircuitPython MLX90640
+
+ImportError: No module named 'board'
+
+## Purchasing: Thermal Camera MLX90640
+
+https://shop.pimoroni.com/products/mlx90640-thermal-camera-breakout?variant=12549161746515
