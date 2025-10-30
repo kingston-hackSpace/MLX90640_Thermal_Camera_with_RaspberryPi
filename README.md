@@ -106,7 +106,7 @@ pip3 install adafruit-circuitpython-mlx90640
 ## Running Python Scripts
 ```
 cd Desktop/thermal_camera
-sudo python3 thermal_test_1.py
+python3 thermal_test_1.py
 ```
 ## More on Installation
 
