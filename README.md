@@ -53,7 +53,7 @@ We'll use the Raspberry Pi Terminal to navigate to our scripts, install dependen
 We need to create a virtual environment to install Python packages for our camera.  
 In your Terminal, type:
 
-```bash python3 -m venv virtualEnv ```
+``` python3 -m venv virtualEnv ```
 
 Activate the virtual environment:
-``` source virtualEnv/bin/activate
+``` source virtualEnv/bin/activate ```
