@@ -74,12 +74,11 @@ sudo apt-get install -y python3-smbus
 sudo apt-get install -y i2c-tools
 sudo nano /boot/firmware/config.txt
 ```
-Edit the file that is now open:
-  Uncomment the line "Add dtparam=i2c_arm=on"
-  and modify it as follows:
+Edit the file that is now open by uncommenting the line "Add dtparam=i2c_arm=on" and modify it as follows:
   
   `Add dtparam=i2c_arm=on, i2c_arm_baudrate=400000 `
-  This enables the I2C interface and set the baud rate for faster data transfer.
+  
+This enables the I2C interface and set the baud rate for faster data transfer.
 
 After editing config.txt, make sure to reboot your Raspberry Pi:
 
