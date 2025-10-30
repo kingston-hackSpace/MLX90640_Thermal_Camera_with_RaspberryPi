@@ -120,14 +120,20 @@ pip3 install adafruit-circuitpython-mlx90640
 ```
 
 ## Running Python Scripts
-```
-cd Desktop/thermal_camera
-python3 thermal_test_1.py
-```
-## More on Installation
+Go to your Thermal Camera Folder
+`cd Desktop/thermal_camera`
 
-Step-by-step guide for installing software and hooking up the MLX90640:
-https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
+Run the Script
+`python3 thermal_test_1.py`
+
+Close the Script
+`Ctrl + C`
+
+TEST1: Reads temperature-data from an MLX90640 thermal camera and prints the average temperature.
+
+TEST2: Visualizes thermal images (on monitor via HDMI) using matplotlib and numpy. Uses the ‘imshow‘ function to plot temp-data into colour-data. 
+
+TEST3: 
 
 ## Troubleshooting
 
