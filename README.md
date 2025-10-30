@@ -44,10 +44,10 @@ We'll use the Raspberry Pi's Terminal to type commands that will locate our ther
 We will need to create a virtual-environment to isntall packages for our camera. 
 On your Terminal, type the following commands:
 <ul>
-  ```
-  <li> python -m venv virtualEnv
-  <li> source virtualEnv/bin/activate
-    ```
+  ```bash
+  python -m venv virtualEnv
+  source virtualEnv/bin/activate
+  ```bash
 </ul>
 
 Learn more about how to use virtual environments in Python here:
