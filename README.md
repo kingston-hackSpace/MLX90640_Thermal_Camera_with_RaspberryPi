@@ -1,72 +1,146 @@
-# MLX90640_Thermal_Camera_with_RaspberryPi
-Getting data from a MLX90640 Thermal Camera with a Raspberry Pi and Python
+# MLX90640 Thermal Camera with Raspberry Pi
 
-<h3>How to setup the device (If installing from scratch)</h3>
-<h3>How to install the operating system image using Raspberry Pi imager</h3>
-<ul>
-<li>https://www.raspberrypi.com/software/</li>
-<li>Insert the SD card into the computer.</li>
-<li>Choose device, OS (use recommended settings) and select storage</li>
-</ul>
+Getting data from a MLX90640 Thermal Camera with a Raspberry Pi using Python.
 
-<h3>How to login to a raspberry pi</h3>
-<ul>
-<li>Power up the raspberry pi.</li>
-<li>If prompted for a username and password, enter these in the following screen.</li>
-</ul>
+---
 
-<h3>How to download Python scripts</h3>
-<ul>
-<li>From this current GitHub webpage, press on the button "Code" and " Download ZIP"</li>
-<li>Unzip your folder. Save this folder in an easy-to-access location. For this tutorial, keep your folder in Desktop.</li>
-<li>Re-name your folder as: "thermal_camera"</li>  
-</ul>
+## How to set up your Raspberry Pi (If installing from scratch)
 
-<h3>Wiring the Thermal Camera</h3>
-<ul>
-<li>Camera - RasPi
-<li>GND - Pin39 (GPIO GND) </li>
-<li>3V - Pin1 (GPIO 3V3)</li>
-<li>SDA - Pin3 (GPIO2) </li>
-<li>SCL - Pin5 (GPIO3) </li>
-</ul>
+Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** software:
 
-<h3>Open the Terminal </h3>
-We'll use the Raspberry Pi's Terminal to type commands that will locate our thermal-camera-Python-script, compile it and execute it: 
-<ul>
-<li> Open the Terminal using the bar at the top-left of the RaspberryPi main desktop window.
-</ul>
+1. [Download Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+2. Insert the SD card into your computer.
+3. At the Imager softare, choose:
+   
+    * **Device** – Select your Raspberry Pi model.
 
-<h3>Virtual Environments </h3>
-We will need to create a virtual-environment to isntall packages for our camera. 
-On your Terminal, type the following commands:
-<ul>
-<li> python -m venv virtualEnv
-<li> source virtualEnv/bin/activate
-</ul>
+    * **Operating System** – Choose the 64-bit version (use the recommended settings).
 
-Learn more about how to use virtual environments in Python here:
-https://www.w3schools.com/python/python_virtualenv.asp
-</ul>
+    * **Storage** – Select your SD card.
 
-<h3>Python Scripts </h3>
+---
 
-Type the following commands:
-<ul>
-<li> cd Desktop/thermal_camera </li>
-<li> sudo python3 thermal_test_1.py</li>
-</ul>
+## How to log-in to a Raspberry Pi
 
-<h3>More on installation...</h3>
-A step by step guide for installing software and hooking up the mlx90640 to the rpi:
+1. Power up the Raspberry Pi.
+2. If prompted for a username and password, enter them in the login screen.
+
+---
+
+## Download Python scripts
+
+1. From this GitHub page, press the **Code** button and **Download ZIP**.
+2. Unzip the folder and save it in an easy-to-access location (for example, Desktop).
+3. Rename the folder to `thermal_camera`.
+
+---
+## TUTORIAL
+This tutorial is based on the guide from **how2electronics.com**
+
+If you have any enquiries regarding the steps that follow, please visit:
 https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
 
-<h3>Trouble shooting </h3>
+---
 
-https://raspberrypi.stackexchange.com/questions/113922/cannot-pip-install-adafruit-circuitpython-mlx90640
+## Wiring the Thermal Camera
 
-https://stackoverflow.com/questions/53196848/importerror-no-module-named-board-adafruit
+| Camera Pin | Raspberry Pi Pin |
+|------------|----------------|
+| GND        | Pin 39 (GPIO GND) |
+| 3V         | Pin 1 (GPIO 3V3) |
+| SDA        | Pin 3 (GPIO2) |
+| SCL        | Pin 5 (GPIO3) |
 
-<h3> Purchasing: Thermal Camera MLX90640 </h3>
+---
+
+## Open the Terminal
+
+We'll use the Raspberry Pi Terminal to navigate to our scripts, install dependencies, and run Python scripts.
+
+- Open the Terminal using the bar at the top-left of the Raspberry Pi desktop.
+
+---
+
+## Virtual Environments
+
+We need to create a virtual environment to install Python packages for our camera.  
+In your Terminal, type:
+
+` python3 -m venv virtualEnv `
+
+` source virtualEnv/bin/activate `
+
+Learn more about virtual environments here:
+https://www.w3schools.com/python/python_virtualenv.asp
+
+## Installing Dependencies
+
+Type the following commands in your Terminal:
+
+```
+sudo apt-get update
+sudo apt-get upgrade   
+pip3 install matplotlib
+pip3 install scipy
+pip3 install numpy
+sudo apt-get install -y python3-smbus
+sudo apt-get install -y i2c-tools
+sudo nano /boot/firmware/config.txt
+```
+Edit the file that is now open by uncommenting the line "Add dtparam=i2c_arm=on" and modify it as follows:
+  
+  `Add dtparam=i2c_arm=on, i2c_arm_baudrate=400000 `
+  
+This enables the I2C interface and set the baud rate for faster data transfer.
+
+To save and close, type
+
+**Save** -> Ctrl + O
+
+Enter
+
+**Close** -> Ctrl + X
+
+You would be back at your main Terminal window. 
+Now reboot your Raspberry Pi:
+
+` sudo reboot `
+
+Once the Raspberry Pi restarts, run the following command to scan and display devices connected on the I2C bus 1, helpful for verifying connectivity.
+
+`sudo i2cdetect -y 1`
+
+Re-open your virtual environtment and install more dependancies:
+
+```
+python3 -m venv virtualEnv
+source virtualEnv/bin/activate
+pip3 install RPI.GPIO adafruit-blinka
+pip3 install adafruit-circuitpython-mlx90640
+```
+
+## Running Python Scripts
+Go to your Thermal Camera Folder
+`cd Desktop/thermal_camera`
+
+Run the Script
+`python3 thermal_test_1.py`
+
+Close the Script
+`Ctrl + C`
+
+TEST1: Reads temperature-data from an MLX90640 thermal camera and prints the average temperature.
+
+TEST2: Visualizes thermal images (on monitor via HDMI) using matplotlib and numpy. Uses the ‘imshow‘ function to plot temp-data into colour-data. 
+
+TEST3: 
+
+## Troubleshooting
+
+Cannot pip install Adafruit CircuitPython MLX90640
+
+ImportError: No module named 'board'
+
+## Purchasing: Thermal Camera MLX90640
 
 https://shop.pimoroni.com/products/mlx90640-thermal-camera-breakout?variant=12549161746515
