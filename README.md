@@ -20,14 +20,14 @@ Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** so
 
 ---
 
-## How to log in to a Raspberry Pi
+## How to log-in to a Raspberry Pi
 
 1. Power up the Raspberry Pi.
 2. If prompted for a username and password, enter them in the login screen.
 
 ---
 
-## How to download Python scripts
+## Download Python scripts
 
 1. From this GitHub page, press the **Code** button and **Download ZIP**.
 2. Unzip the folder and save it in an easy-to-access location (for example, Desktop).
