@@ -55,4 +55,20 @@ In your Terminal, type:
 
 ` python3 -m venv virtualEnv `
 
-``` source virtualEnv/bin/activate ```
+` source virtualEnv/bin/activate `
+
+Learn more about virtual environments here:
+https://www.w3schools.com/python/python_virtualenv.asp
+
+## Installing Dependencies
+
+Type the following commands in your Terminal:
+
+```sudo apt-get update
+sudo apt-get upgrade   # type Y if necessary
+pip3 install matplotlib
+pip3 install scipy
+pip3 install numpy
+sudo apt-get install -y python3-smbus
+sudo apt-get install -y i2c-tools
+sudo nano /boot/firmware/config.txt```
