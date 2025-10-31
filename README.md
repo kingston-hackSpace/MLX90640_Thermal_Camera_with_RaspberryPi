@@ -149,7 +149,10 @@ pip3 install adafruit-circuitpython-mlx90640
 ## Running Python Scripts
 
 Run the Script
-`python3 thermal_test_1.py`
+```
+cd Desktop/thermal_camera
+python3 thermal_test_1.py
+```
 
 Close the Script
 `Ctrl + C`
