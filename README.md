@@ -42,10 +42,13 @@ Forked in Oct-2025 from :
 https://github.com/melexis/mlx90640-library/tree/master 
 
 
-
+-------------------------------------
+-------------------------------------
 -------------------------------------
 -------------------------------------
 ##LETS START! 
+-------------------------------------
+-------------------------------------
 -------------------------------------
 -------------------------------------
 
@@ -59,7 +62,7 @@ https://github.com/melexis/mlx90640-library/tree/master
 | SDA        | Pin 3 (GPIO2) |
 | SCL        | Pin 5 (GPIO3) |
 
-Raspberry Pi pin view: https://github.com/kingston-hackSpace/MLX90640_Thermal_Camera_with_RaspberryPi/blob/main/GPIO.png 
+RPi Pin Layout : https://github.com/kingston-hackSpace/MLX90640_Thermal_Camera_with_RaspberryPi/blob/main/GPIO.png 
 
 ---
 ## Download Python scripts
