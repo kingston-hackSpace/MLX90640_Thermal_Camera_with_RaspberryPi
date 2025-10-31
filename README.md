@@ -92,7 +92,7 @@ Type in your Terminal:
 
 ` python3 -m venv venv `
 
-` source virtualEnv/bin/activate `
+` source venv/bin/activate `
 
 Learn more about virtual environments here:
 https://www.w3schools.com/python/python_virtualenv.asp
@@ -140,8 +140,8 @@ Once the Raspberry Pi restarts, run the following command to scan and display de
 Re-open your virtual environtment and install more dependancies:
 
 ```
-python3 -m venv virtualEnv
-source virtualEnv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 pip3 install RPI.GPIO adafruit-blinka
 pip3 install adafruit-circuitpython-mlx90640
 ```
