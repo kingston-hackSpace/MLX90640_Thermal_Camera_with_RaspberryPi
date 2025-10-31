@@ -90,7 +90,7 @@ Type in your Terminal:
 
 `cd Desktop/thermal_camera`
 
-` python3 -m venv virtualEnv `
+` python3 -m venv venv `
 
 ` source virtualEnv/bin/activate `
 
@@ -156,9 +156,41 @@ Close the Script
 
 TEST1: Reads temperature-data from an MLX90640 thermal camera and prints the average temperature.
 
-TEST2: Real-Time visualizatino of thermal images (on monitor via HDMI) using matplotlib and numpy.
+TEST2: Real-Time visualization of thermal images (on monitor via HDMI) using matplotlib and numpy.
 
 TEST3: Save 'frame-shots" images (jpeg) every 100 cycles. 
+
+
+## BONUS: TEST4: Real-Time visualization on your phone
+
+STEP 1: Install required packages:
+   hostapd → creates the Wi-Fi hotspot.
+   dhcpcd5 → manages network interfaces (required for static IP).
+   dnsmasq → acts as a DHCP server to assign IPs to connected devices.
+
+```
+sudo apt install hostapd dnsmasq -y
+sudo systemctl stop hostapd
+sudo systemctl stop dnsmasq
+```
+STEP 2: Enable and start dhcpcd
+```
+sudo apt install dhcpcd5 -y
+sudo systemctl enable dhcpcd
+sudo systemctl start dhcpcd
+```
+STEP 3: Check status
+
+`sudo systemctl status dhcpcd`
+
+sudo nano /etc/dhcpcd.conf
+
+interface wlan0
+    static ip_address=192.168.4.1/24
+    nohook wpa_supplicant
+
+sudo systemctl restart dhcpcd
+```
 
 ## Raspberry Pi OverHeating Hazards
 This project demands operating the Raspberry Pi's I2C bus at high speeds, necessary real-time thermal imaging with the MLX90640 sensor. This can lead to increased power consumption and heat generation. It’s crucial to ensure adequate cooling for the Raspberry Pi to prevent thermal throttling or damage. Proper ventilation or active cooling solutions, such as heatsinks or fans, are recommended to maintain stable operation and prevent overheating.
