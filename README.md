@@ -26,22 +26,14 @@ Install the Raspberry Pi's operating system using the **Raspberry Pi Imager** so
 2. If prompted for a username and password, enter them in the login screen.
 
 ---
-
-## Download Python scripts
-
-1. From this GitHub page, press the **Code** button and **Download ZIP**.
-2. Unzip the folder and save it in an easy-to-access location (for example, Desktop).
-3. Rename the folder to `thermal_camera`.
-
----
-## TUTORIAL
+## TUTORIAL (see for reference)
 This tutorial is based on the guide from **how2electronics.com**
 
 If you have any enquiries regarding the steps that follow, please visit:
 https://how2electronics.com/diy-thermal-imaging-camera-with-mlx90640-raspberry-pi/
 
 ---
-## MLX90640 Library Documentation
+## MLX90640 Library Documentation (see for reference)
 
 Library Documentation : 
 https://github.com/kingston-hackSpace/mlx90640-library 
@@ -49,7 +41,16 @@ https://github.com/kingston-hackSpace/mlx90640-library
 Forked in Oct-2025 from :  
 https://github.com/melexis/mlx90640-library/tree/master 
 
----
+
+-------------------------------------
+-------------------------------------
+-------------------------------------
+##LETS START! 
+-------------------------------------
+-------------------------------------
+-------------------------------------
+-------------------------------------
+
 
 ## Wiring the Thermal Camera
 
@@ -60,20 +61,34 @@ https://github.com/melexis/mlx90640-library/tree/master
 | SDA        | Pin 3 (GPIO2) |
 | SCL        | Pin 5 (GPIO3) |
 
+RPi Pin Layout : https://github.com/kingston-hackSpace/MLX90640_Thermal_Camera_with_RaspberryPi/blob/main/GPIO.png 
+
+---
+## Download Python scripts
+
+1. From this GitHub page, press the **Code** button and **Download ZIP**.
+2. Unzip the folder and save it in an easy-to-access location (for example, Desktop).
+3. Rename the folder to `thermal_camera`.
+
 ---
 
 ## Open the Terminal
 
-We'll use the Raspberry Pi Terminal to navigate to our scripts, install dependencies, and run Python scripts.
+We'll use the Raspberry Pi **Terminal** to navigate to our scripts, install dependencies, and run Python scripts.
 
 - Open the Terminal using the bar at the top-left of the Raspberry Pi desktop.
+
 
 ---
 
 ## Virtual Environments
 
-We need to create a virtual environment to install Python packages for our camera.  
-In your Terminal, type:
+We need to create a virtual-environment to install Python packages for our camera. 
+We will save our virtual-environment at our project folder, so we will always have to start coding from our folder location.
+
+Type in your Terminal:
+
+`cd Desktop/thermal_camera`
 
 ` python3 -m venv virtualEnv `
 
@@ -88,7 +103,7 @@ Type the following commands in your Terminal:
 
 ```
 sudo apt-get update
-sudo apt-get upgrade   
+sudo apt-get upgrade -y   
 pip3 install matplotlib
 pip3 install scipy
 pip3 install numpy
@@ -96,6 +111,9 @@ sudo apt-get install -y python3-smbus
 sudo apt-get install -y i2c-tools
 sudo nano /boot/firmware/config.txt
 ```
+
+Reference image: https://github.com/kingston-hackSpace/MLX90640_Thermal_Camera_with_RaspberryPi/blob/main/nano.png
+
 Edit the file that is now open by uncommenting the line "Add dtparam=i2c_arm=on" and modify it as follows:
   
   `Add dtparam=i2c_arm=on, i2c_arm_baudrate=400000 `
@@ -129,8 +147,6 @@ pip3 install adafruit-circuitpython-mlx90640
 ```
 
 ## Running Python Scripts
-Go to your Thermal Camera Folder
-`cd Desktop/thermal_camera`
 
 Run the Script
 `python3 thermal_test_1.py`
