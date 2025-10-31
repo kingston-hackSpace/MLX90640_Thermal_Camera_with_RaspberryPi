@@ -4,7 +4,8 @@ Getting data from a MLX90640 Thermal Camera with a Raspberry Pi using Python.
 
 ---
 
-## How to set up your Raspberry Pi (If installing from scratch)
+## How to set up your Raspberry Pi 
+(If installing from scratch)
 
 https://github.com/kingston-hackSpace/RaspberryPi/blob/main/README.md
 
