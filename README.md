@@ -103,7 +103,7 @@ Type the following commands in your Terminal:
 
 ```
 sudo apt-get update
-sudo apt-get upgrade   
+sudo apt-get upgrade -y   
 pip3 install matplotlib
 pip3 install scipy
 pip3 install numpy
