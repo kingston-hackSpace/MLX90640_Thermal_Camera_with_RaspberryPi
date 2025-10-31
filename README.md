@@ -41,11 +41,14 @@ https://github.com/kingston-hackSpace/mlx90640-library
 Forked in Oct-2025 from :  
 https://github.com/melexis/mlx90640-library/tree/master 
 
+
+
 -------------------------------------
 -------------------------------------
 ##LETS START! 
 -------------------------------------
 -------------------------------------
+
 
 ## Wiring the Thermal Camera
 
